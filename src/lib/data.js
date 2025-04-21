@@ -1,21 +1,32 @@
 export const skills = [
-    {
-      category: 'Frontend Development',
-      techs: ['HTML5', 'CSS5', 'JavaScript',  'React', 'Tailwind CSS', 'Bootstrap']
-    },
-    {
-      category: 'Backend Development',
-      techs: [ 'Java','Hibernate','SpringBoot']
-    },
-    {
-      category: 'Database Management',
-      techs: ['MongoDB', 'MySQL']
-    },
-    // {
-    //   category: 'DevOps & Cloud',
-    //   techs: ['AWS', 'Azure', 'Google Cloud', 'Docker', 'Kubernetes', 'Jenkins', 'GitLab CI/CD', 'Terraform', 'Ansible']
-    // }
-  ];
+  {
+    category: 'Frontend Development',
+    techs: [
+      { name: 'HTML5', image: 'HTMLIMAGE.png' },
+      { name: 'CSS5', image: 'css.jpeg'},
+      { name: 'JavaScript', image: 'javaScript.png' },
+      { name: 'React', image: 'react.png' },
+      { name: 'Tailwind CSS', image: 'tw.jpeg' },
+      { name: 'Bootstrap', image: 'bootstrap.jpeg' },
+    ],
+  },
+  {
+    category: 'Backend Development',
+    techs: [
+      { name: 'Java', image: 'jav.png' },
+      { name: 'Hibernate', image: 'hiber.png' },
+      { name: 'SpringBoot', image: 'spring.png' },
+    ],
+  },
+  {
+    category: 'Database Management',
+    techs: [
+      { name: 'MongoDB', image: 'mang.png' },
+      { name: 'MySQL', image: 'mysq.png' },
+    ],
+  },
+];
+
   export const projects = [
     {
       id: 1,

@@ -7,14 +7,14 @@ const Skills = () => {
       id="skills"
       className="py-20 px-6 md:px-12 relative section-highlight"
       style={{
-        backgroundColor: '#0c0d12', // Solid background color
+        backgroundColor: '#0c0d12',
       }}
     >
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2
             className="text-3xl md:text-4xl font-bold font-poppins mb-4"
-            style={{ color: '#6961ff' }} // Updated heading color
+            style={{ color: '#6961ff' }}
           >
             My Skills
           </h2>
@@ -35,18 +35,22 @@ const Skills = () => {
                 ) : (
                   <Terminal className="h-6 w-6 text-primary mr-2" />
                 )}
-                <h3 className="text-xl font-bold text-white">
-                  {skill.category}
-                </h3>
+                <h3 className="text-xl font-bold text-white">{skill.category}</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-4">
                 {skill.techs.map((tech, techIndex) => (
-                  <span
+                  <div
                     key={techIndex}
-                    className="bg-gray-700 text-[#E0E0E0] px-3 py-1 rounded-full text-sm transition-all hover:bg-primary hover:text-white"
+                    className="flex flex-col items-center bg-gray-700 text-[#E0E0E0] px-4 py-2 rounded-xl text-sm transition-all hover:bg-primary hover:text-white w-24"
                   >
-                    {tech}
-                  </span>
+                    <img
+                      src={tech.image}
+                      alt={tech.name}
+                      className="w-12 h-12 mb-1 rounded-full object-contain"
+                    />
+                    <span className="text-center">{tech.name}</span>
+                  </div>
                 ))}
               </div>
             </div>
